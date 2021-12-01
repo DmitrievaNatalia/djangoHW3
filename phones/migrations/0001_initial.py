@@ -15,10 +15,10 @@ class Migration(migrations.Migration):
                 ('id', models.IntegerField(primary_key=True, serialize=False)),
                 ('name', models.TextField()),
                 ('price', models.FloatField()),
-                ('image', models.TextField()),
+                ('image', models.ImageField(upload_to='')),
                 ('release_date', models.DateField()),
                 ('lte_exists', models.BooleanField()),
-                ('slug', models.TextField()),
+                ('slug', models.SlugField()),
             ],
         ),
     ]

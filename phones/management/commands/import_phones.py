@@ -19,5 +19,5 @@ class Command(BaseCommand):
                                  price=float(phone['price']),
                                  release_date=phone['release_date'],
                                  lte_exists=phone['lte_exists'] == 'True',
-                                 slug = slugify(phone['name'], allow_unicode=True)
+                                 slug=slugify(phone['name'], allow_unicode=True)
                                  )
